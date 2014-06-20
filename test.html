@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Table [component] - SUIT</title>
+<meta name="viewport" content="initial-scale=1,width=device-width">
+<link rel="stylesheet" href="build/build.css">
+<style>
+  #fontInheritance {
+    font-family: sans-serif;
+    font-family: 20px;
+    font-weight: bold;
+  }
+
+  #textWrapping {
+    width: 80px;
+  }
+
+  #colorInheritance {
+    color: green;
+  }
+
+  #baseline .Button {
+    display: inline-block;
+    width: auto;
+  }
+
+  #baseline .Button:first-child {
+      width: 80px;
+  }
+</style>
+
+<div class="Test">
+  <h1 class="Test-title">SUIT CSS: <a href="https://github.com/trunkclub/suitcss-components-table">Table</a> component tests</h1>
+
+  <h3 class="Test-describe">.Table</h3>
+  <h3 class="Test-it">renders full width by default</h3>
+  <div class="Test-run" id="renders">
+    <table class="Table">
+      <caption>Caption</caption>
+      <colgroup><col><col span="2"></colgroup>
+      <thead><tr><th>head row 1, cell 1</th><th>head row 1, cell 2</th><th>head row 1, cell 3</th></tr></thead>
+      <tfoot><tr><td>foot row 1, cell 1</td><td>foot row 1, cell 2</td><td>foot row 1, cell 3</td></tr></tfoot>
+      <tbody><tr><td>body row 1, cell 1</td><td>body row 1, cell 2</td><td>body row 1, cell 3</td></tr>
+						 <tr><td>body row 2, cell 1</td><td>Some text that is much longer than the other cells</td><td>body row 2, cell 3</td></tr>
+						 <tr><td>body row 3, cell 1</td><td>body row 3, cell 2</td><td>body row 3, cell 3</td></tr></tbody>
+    </table>
+  </div>
+
+  <h3 class="Test-describe">.Table--fixed</h3>
+  <h3 class="Test-it">fixed layout</h3>
+  <div class="Test-run">
+    <table class="Table Table--fixed">
+      <caption>Caption</caption>
+      <colgroup><col><col span="2"></colgroup>
+      <thead><tr><th>head row 1, cell 1</th><th>head row 1, cell 2</th><th>head row 1, cell 3</th></tr></thead>
+      <tfoot><tr><td>foot row 1, cell 1</td><td>foot row 1, cell 2</td><td>foot row 1, cell 3</td></tr></tfoot>
+      <tbody><tr><td>body row 1, cell 1</td><td>body row 1, cell 2</td><td>body row 1, cell 3</td></tr>
+						 <tr><td>body row 2, cell 1</td><td>Some text that is much longer than the other cells</td><td>body row 2, cell 3</td></tr>
+						 <tr><td>body row 3, cell 1</td><td>body row 3, cell 2</td><td>body row 3, cell 3</td></tr></tbody>
+    </table>
+  </div>
+
+  <h3 class="Test-describe">.Table--hover</h3>
+  <h3 class="Test-it">rows hover</h3>
+  <div class="Test-run">
+    <table class="Table Table--hover">
+      <caption>Caption</caption>
+      <colgroup><col><col span="2"></colgroup>
+      <thead><tr><th>head row 1, cell 1</th><th>head row 1, cell 2</th><th>head row 1, cell 3</th></tr></thead>
+      <tfoot><tr><td>foot row 1, cell 1</td><td>foot row 1, cell 2</td><td>foot row 1, cell 3</td></tr></tfoot>
+      <tbody><tr><td>body row 1, cell 1</td><td>body row 1, cell 2</td><td>body row 1, cell 3</td></tr>
+						 <tr><td>body row 2, cell 1</td><td>Some text that is much longer than the other cells</td><td>body row 2, cell 3</td></tr>
+						 <tr><td>body row 3, cell 1</td><td>body row 3, cell 2</td><td>body row 3, cell 3</td></tr></tbody>
+    </table>
+  </div>
+
+  <h3 class="Test-describe">.Table--striped</h3>
+  <h3 class="Test-it">rows striped</h3>
+  <div class="Test-run">
+    <table class="Table Table--striped">
+      <caption>Caption</caption>
+      <colgroup><col><col span="2"></colgroup>
+      <thead><tr><th>head row 1, cell 1</th><th>head row 1, cell 2</th><th>head row 1, cell 3</th></tr></thead>
+      <tfoot><tr><td>foot row 1, cell 1</td><td>foot row 1, cell 2</td><td>foot row 1, cell 3</td></tr></tfoot>
+      <tbody><tr><td>body row 1, cell 1</td><td>body row 1, cell 2</td><td>body row 1, cell 3</td></tr>
+						 <tr><td>body row 2, cell 1</td><td>Some text that is much longer than the other cells</td><td>body row 2, cell 3</td></tr>
+						 <tr><td>body row 3, cell 1</td><td>body row 3, cell 2</td><td>body row 3, cell 3</td></tr></tbody>
+    </table>
+  </div>
+
+  <h3 class="Test-describe">.Table--withBorder</h3>
+  <h3 class="Test-it">table border</h3>
+  <div class="Test-run">
+    <table class="Table Table--withBorder">
+      <caption>Caption</caption>
+      <colgroup><col><col span="2"></colgroup>
+      <thead><tr><th>head row 1, cell 1</th><th>head row 1, cell 2</th><th>head row 1, cell 3</th></tr></thead>
+      <tfoot><tr><td>foot row 1, cell 1</td><td>foot row 1, cell 2</td><td>foot row 1, cell 3</td></tr></tfoot>
+      <tbody><tr><td>body row 1, cell 1</td><td>body row 1, cell 2</td><td>body row 1, cell 3</td></tr>
+						 <tr><td>body row 2, cell 1</td><td>Some text that is much longer than the other cells</td><td>body row 2, cell 3</td></tr>
+						 <tr><td>body row 3, cell 1</td><td>body row 3, cell 2</td><td>body row 3, cell 3</td></tr></tbody>
+    </table>
+  </div>
+
+  <h3 class="Test-describe">.Table--compact</h3>
+  <h3 class="Test-it">reduce vertical padding</h3>
+  <div class="Test-run">
+    <table class="Table Table--compact">
+      <caption>Caption</caption>
+      <colgroup><col><col span="2"></colgroup>
+      <thead><tr><th>head row 1, cell 1</th><th>head row 1, cell 2</th><th>head row 1, cell 3</th></tr></thead>
+      <tfoot><tr><td>foot row 1, cell 1</td><td>foot row 1, cell 2</td><td>foot row 1, cell 3</td></tr></tfoot>
+      <tbody><tr><td>body row 1, cell 1</td><td>body row 1, cell 2</td><td>body row 1, cell 3</td></tr>
+						 <tr><td>body row 2, cell 1</td><td>Some text that is much longer than the other cells</td><td>body row 2, cell 3</td></tr>
+						 <tr><td>body row 3, cell 1</td><td>body row 3, cell 2</td><td>body row 3, cell 3</td></tr></tbody>
+    </table>
+  </div>
+</div>

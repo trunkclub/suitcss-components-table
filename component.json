@@ -1,0 +1,13 @@
+{
+  "name": "components-table",
+  "repo": "trunkclub/suitcss-components-table",
+  "version": "0.1.0",
+  "styles": [
+    "table.css"
+  ],
+  "development": {
+    "trunkclub/suitcss-components-table": "*"
+  },
+  "author": "Trunk Club",
+  "license": "MIT"
+}

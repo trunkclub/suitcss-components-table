@@ -1,0 +1,13 @@
+{
+  "name": "suit-components-table",
+  "version": "0.1.0",
+  "author": "Trunk Club",
+  "main": "table.css",
+  "ignore": [
+    ".*",
+    "CHANGELOG.md",
+    "component.json",
+    "package.json",
+    "test.html"
+  ]
+}
