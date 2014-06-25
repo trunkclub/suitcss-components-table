@@ -1,9 +1,12 @@
 {
   "name": "suit-components-table",
+  "description": "",
   "version": "0.1.0",
-  "author": "Trunk Club",
   "main": "table.css",
   "ignore": [
+    "build",
+    "components",
+    "test",
     ".*",
     "CHANGELOG.md",
     "component.json",

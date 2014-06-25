@@ -4,8 +4,8 @@
   "version": "0.1.0",
   "style": "table.css",
   "files": [
-    "table.css",
-    "component.json"
+    "component.json",
+    "table.css"
   ],
   "devDependencies": {
     "component": "0.19.x",
