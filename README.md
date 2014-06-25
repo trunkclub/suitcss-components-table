@@ -11,7 +11,7 @@ Read more about [SUIT's design principles](https://github.com/suitcss/suit/).
 * [Component(1)](http://component.io/): `component install suitcss/components-table`
 * [npm](https://npmjs.org/): `npm install suitcss-components-table`
 * [Bower](http://bower.io/): `bower install suit-components-table`
-* Download: [zip](https://github.com/suitcss/components-table/zipball/master)
+* Download: [zip](https://github.com/trunkclub/suitcss-components-table/zipball/master)
 
 ## Available classes
 
