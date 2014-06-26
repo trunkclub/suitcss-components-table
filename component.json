@@ -2,12 +2,10 @@
   "name": "components-table",
   "repo": "trunkclub/suitcss-components-table",
   "version": "0.1.0",
-  "styles": [
-    "table.css"
-  ],
+  "styles": ["table.css"],
+  "dependencies": {},
   "development": {
-    "trunkclub/suitcss-components-table": "*"
+    "suitcss/components-test": "0.1.1"
   },
-  "author": "Trunk Club",
   "license": "MIT"
 }
